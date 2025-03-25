@@ -1,15 +1,19 @@
-import express from "express";
-import dotenv from "dotenv";
+const express=require("express")
+require("dotenv/config")
+
+const routes=require("./deepseek.js")
 
 const app = express();
 
 app.use(express.json());
-dotenv.config();
+app.use("/", routes);
 
-const port = process.env.PORT
+const PORT = process.env.PORT
  
 // Server Startup
 
-app.listen(port, () => {
-  console.log("Server started ");
-});
+app.listen(PORT, ()=>{
+
+    console.log(`########${ PORT}`)
+    console.log(`************ KEY-----${process.env.KEY}`)
+})
