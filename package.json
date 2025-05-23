@@ -11,8 +11,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@langchain/openai": "^0.5.11",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "langchain": "^0.3.27",
     "openai": "^4.89.0"
   },
   "devDependencies": {

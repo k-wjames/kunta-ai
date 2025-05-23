@@ -15,5 +15,4 @@ const PORT = process.env.PORT
 app.listen(PORT, ()=>{
 
     console.log(`########${ PORT}`)
-    console.log(`************ KEY-----${process.env.KEY}`)
 })
